@@ -1,3 +1,8 @@
+<a name="1.0.3"></a>
+## [1.0.3](https://github.com/rahulbhooteshwar/validation-messages/compare/v1.0.2...v1.0.3) (2017-07-28)
+
+
+
 <a name="1.0.2"></a>
 ## 1.0.2 (2017-07-28)
 
