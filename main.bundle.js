@@ -64,7 +64,7 @@ var AppComponent = (function () {
     }
     AppComponent.prototype.ngOnInit = function () {
         var self = this;
-        this.messageConfigService.fetchValidationMessages('/assets/validation-messages.json').subscribe(function (data) {
+        this.messageConfigService.fetchValidationMessages('validation-messages/assets/validation-messages.json').subscribe(function (data) {
             self.messageConfigService.validationMessages = data;
             self.startLoading = true;
         });
