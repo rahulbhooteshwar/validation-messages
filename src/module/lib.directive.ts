@@ -1,6 +1,6 @@
 import { Directive, ElementRef,  OnInit, Renderer2, HostListener} from '@angular/core';
 import {NgModel} from '@angular/forms';
-import { MessageConfigService } from './message-config.service';
+import { MessageConfigService } from './lib.service';
 @Directive({
   selector: '[appValidationMessages]'
 })

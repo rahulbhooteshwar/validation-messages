@@ -1,7 +1,7 @@
 {
   "name": "validation-messages",
   "description": "Angular 2 module for displaying validation messages on template driven forms",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "filename": "./src/validation-messages.js",
   "homepage": "http://github.com/rahulbhooteshwar/validation-messages",
   "author": {

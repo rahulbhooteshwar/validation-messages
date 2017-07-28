@@ -1,11 +1,11 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ValidationMessagesDirective} from './validation-messages.directive';
-import { MessageConfigService } from './message-config.service';
+import { ValidationMessagesDirective} from './lib.directive';
+import { MessageConfigService } from './lib.service';
 
 // Export module's public API
-export { ValidationMessagesDirective} from './validation-messages.directive';
-export { MessageConfigService } from './message-config.service';
+export { ValidationMessagesDirective} from './lib.directive';
+export { MessageConfigService } from './lib.service';
 
 @NgModule({
   imports: [
