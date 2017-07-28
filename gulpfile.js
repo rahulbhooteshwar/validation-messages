@@ -252,7 +252,7 @@ gulp.task('ng-compile',()=>{
 
 // Lint, Prepare Build, , Sass to css, Inline templates & Styles and Compile
 gulp.task('compile', (cb) => {
-  runSequence('lint', 'pre-compile', 'inline-templates', 'ng-compile', cb);
+  runSequence('pre-compile', 'inline-templates', 'ng-compile', cb);
 });
 
 // Watch changes on (*.ts, *.html, *.sass) and Compile

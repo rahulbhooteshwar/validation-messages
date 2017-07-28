@@ -1,18 +1,22 @@
-import { Component } from '@angular/core';
-import { Router,NavigationEnd } from '@angular/router';
-import 'rxjs/add/operator/filter';
+import { Component, OnInit } from '@angular/core';
+import {MessageConfigService} from 'validation-messages';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent{
+export class AppComponent implements OnInit{
+  startLoading = false;
+  constructor(private messageConfigService: MessageConfigService){
 
-  constructor(private router: Router){
-
-  this.router.events.filter(event => event instanceof NavigationEnd).subscribe(event => {
-        window.scroll(0, 0);
+  }
+  ngOnInit(){
+    var self = this;
+    this.messageConfigService.fetchValidationMessages('/assets/validation-messages.json').subscribe(
+    data=>{
+      self.messageConfigService.validationMessages = data;
+      self.startLoading = true;
     });
   }
 }

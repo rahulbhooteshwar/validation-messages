@@ -1,0 +1,30 @@
+{
+    "miscellaneous": {
+      "text": "Please enter valid input",
+      "selector": "miscellaneous-validation"
+    },
+    "required": {
+      "text": "This field is required",
+      "selector": "required-validation"
+    },
+    "email": {
+      "text": "Please enter a valid email, e.g. abc@domain.com",
+      "selector": "email-validation"
+    },
+    "minlength":{
+      "text": "Minimum Length should be $DYNAMIC_VALUE",
+      "selector": "minlength-validation"
+    },
+    "maxlength":{
+      "text": "Length should not exceed $DYNAMIC_VALUE",
+      "selector": "maxlength-validation"
+    },
+    "pattern":{
+      "text": "Value should match regular expression format $DYNAMIC_VALUE",
+      "selector": "pattern-validation"
+    },
+    "validateEqual":{
+      "text": "Password & confirm password should match",
+      "selector": "validateEqual-validation"
+    }
+  }

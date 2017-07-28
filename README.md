@@ -1,17 +1,12 @@
 # validation-messages - Angular 2 module for displaying validation messages on template driven forms
 
-[![npm version](https://badge.fury.io/js/validation-messages.svg)](https://badge.fury.io/js/validation-messages)
-[![Build Status](https://travis-ci.org/rahulbhooteshwar/validation-messages.svg?branch=master)](https://travis-ci.org/rahulbhooteshwar/validation-messages)
-[![Coverage Status](https://coveralls.io/repos/github/rahulbhooteshwar/validation-messages/badge.svg?branch=master)](https://coveralls.io/github/rahulbhooteshwar/validation-messages?branch=master)
-[![dependency Status](https://david-dm.org/rahulbhooteshwar/validation-messages/status.svg)](https://david-dm.org/rahulbhooteshwar/validation-messages)
-[![devDependency Status](https://david-dm.org/rahulbhooteshwar/validation-messages/dev-status.svg?branch=master)](https://david-dm.org/rahulbhooteshwar/validation-messages#info=devDependencies)
 
 ## Demo
 
 View all the directives in action at https://rahulbhooteshwar.github.io/validation-messages
 
 ## Dependencies
-* [Angular](https://angular.io) (*requires* Angular 2 or higher, tested with 2.0.0)
+* [Angular](https://angular.io) (*requires* Angular 4.3.2 or higher, tested with 4.3.2)
 
 ## Installation
 Install above dependencies via *npm*. 
@@ -34,30 +29,30 @@ map: {
 
 Once installed you need to import the main module:
 ```js
-import { LibModule } from 'validation-messages';
+import { ValidationMessagesModule} from 'validation-messages';
 ```
 The only remaining part is to list the imported module in your application module. The exact method will be slightly
-different for the root (top-level) module for which you should end up with the code similar to (notice ` LibModule .forRoot()`):
+different for the root (top-level) module for which you should end up with the code similar to (notice ` ValidationMessagesModule .forRoot()`):
 ```js
-import { LibModule } from 'validation-messages';
+import { ValidationMessagesModule } from 'validation-messages';
 
 @NgModule({
   declarations: [AppComponent, ...],
-  imports: [LibModule.forRoot(), ...],  
+  imports: [ValidationMessagesModule.forRoot(), ...],  
   bootstrap: [AppComponent]
 })
 export class AppModule {
 }
 ```
 
-Other modules in your application can simply import ` LibModule `:
+Other modules in your application can simply import ` ValidationMessagesModule `:
 
 ```js
-import { LibModule } from 'validation-messages';
+import { ValidationMessagesModule } from 'validation-messages';
 
 @NgModule({
   declarations: [OtherComponent, ...],
-  imports: [LibModule, ...], 
+  imports: [ValidationMessagesModule, ...], 
 })
 export class OtherModule {
 }

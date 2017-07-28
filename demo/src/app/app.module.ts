@@ -1,32 +1,25 @@
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppRoutingModule } from './app-routing';
-import { AppSharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { GettingStartedComponent } from './getting-started/getting-started.component';
-
-import { LibModule } from 'validation-messages';
-
+import { TemplateFormComponent } from './forms/template-form.component';
+import { ValidationMessagesModule} from 'validation-messages';
+import { ValidateEqualDirective } from './directives/validate-equal.directive';
 @NgModule({
-    declarations: [
-        AppComponent,
-        GettingStartedComponent,
-        HomeComponent
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule,
-        HttpModule,
-        AppRoutingModule,
-        AppSharedModule,
-        LibModule.forRoot()
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    TemplateFormComponent,
+    ValidateEqualDirective
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    ValidationMessagesModule.forRoot()
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

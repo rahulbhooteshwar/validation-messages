@@ -1,1 +1,1 @@
-export * from './module/lib.module';
+export * from './validation-messages/validation-messages.module';
