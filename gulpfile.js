@@ -122,8 +122,9 @@ const readyToRelease = () => {
   gulpUtil.log(`[npm-publish]    User is currently logged in to NPM Registry...........................................${isOK(canNpmPublish)}`);
   gulpUtil.log(`[bump-version]   Option '--version' provided, with value : 'major', 'minor' or 'patch'.................${isOK(canBump)}`);
   gulpUtil.log(`[github-release] Option '--ghToken' provided or 'CONVENTIONAL_GITHUB_RELEASER_TOKEN' variable set......${isOK(canGhRelease)}`);
-
-  return isTravisPassing && onMasterBranch && canBump && canGhRelease && canNpmPublish;
+  return canBump && canNpmPublish;
+  
+  // return isTravisPassing && onMasterBranch && canBump && canGhRelease && canNpmPublish;
 };
 
 const execCmd = (name, args, opts, ...subFolders) => {
