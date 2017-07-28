@@ -1,0 +1,28 @@
+{
+  "generator-ngx-library": {
+    "authorName": "Rahul Bhooteshwar",
+    "authorEmail": "rahul.bhooteshwar@gmail.com",
+    "githubUsername": "rahulbhooteshwar",
+    "projectName": "validation-messages",
+    "projectVersion": "1.0.1",
+    "projectDescription": "Angular 2 module for displaying validation messages on template driven forms",
+    "projectKeywords": [
+      "ng",
+      "angular",
+      "validation",
+      "messages",
+      "validation--messagess"
+    ],
+    "ngPrefix": "vm",
+    "ngVersion": "2.0.0",
+    "ngModules": [
+      "core",
+      "common",
+      "forms",
+      "http",
+      "platform-browser"
+    ],
+    "useGreenkeeper": false,
+    "useCompodoc": true
+  }
+}
